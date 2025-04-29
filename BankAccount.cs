@@ -11,6 +11,10 @@ public class BankAccount
 
     public decimal Deposit(decimal amount)
     {
+        if (amount < 0)
+        {
+            throw new ArgumentException("Cannot deposit negative amount");
+        }
         balance += amount;
         return balance;
     }
