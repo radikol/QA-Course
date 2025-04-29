@@ -22,7 +22,7 @@ public class BankAccount
             return "Error: Insufficient funds";
         }
         balance -= amount;
-        return $"New balance: {balance}";
+        return $"New Balance: {balance}";
     }
 
     public decimal GetBalance()
